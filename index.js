@@ -8,16 +8,20 @@ let cuando = ['antes de la clase', 'cuando dormía', 'mientras hacía ejercicio'
 
 // console.log(quien.length)
 
-function azar(x,y,z,w) {
-    let letraAzar=[];
-    let numeroAleatoriox=Math.floor(Math.random()*x.length)
-    let numeroAleatorioy=Math.floor(Math.random()*y.length)
-    let numeroAleatorioz=Math.floor(Math.random()*z.length)
-    let numeroAleatoriow=Math.floor(Math.random()*w.length)
-    
-    let fraseAleatoria=`${x[numeroAleatoriox]} ${y[numeroAleatorioy]} ${z[numeroAleatorioz]} ${w[numeroAleatoriow]}`
-    return fraseAleatoria
+window.onload = function azar() {
+    let x = quien;
+    let y = accion;
+    let z = que;
+    let w = cuando;
+    let numeroAleatoriox = Math.floor(Math.random() * x.length);
+    let numeroAleatorioy = Math.floor(Math.random() * y.length);
+    let numeroAleatorioz = Math.floor(Math.random() * z.length);
+    let numeroAleatoriow = Math.floor(Math.random() * w.length);
+
+    let fraseAleatoria = `${x[numeroAleatoriox]} ${y[numeroAleatorioy]} ${z[numeroAleatorioz]} ${w[numeroAleatoriow]}`;
+    // return fraseAleatoria
+    document.getElementById("excuse").innerHTML = fraseAleatoria;
 }
 
-let fraseFinal=azar(quien,accion,que,cuando)
-console.log (fraseFinal)
+// let fraseFinal= azar(quien,accion,que,cuando)
+// console.log (fraseFinal)
