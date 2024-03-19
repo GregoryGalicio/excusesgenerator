@@ -16,10 +16,8 @@ function azar(x,y,z,w) {
     let numeroAleatoriow=Math.floor(Math.random()*w.length)
     
     let fraseAleatoria=`${x[numeroAleatoriox]} ${y[numeroAleatorioy]} ${z[numeroAleatorioz]} ${w[numeroAleatoriow]}`
-
-    
-
-    console.log(fraseAleatoria)
+    return fraseAleatoria
 }
 
-azar(quien,accion,que,cuando)
+let fraseFinal=azar(quien,accion,que,cuando)
+console.log (fraseFinal)
